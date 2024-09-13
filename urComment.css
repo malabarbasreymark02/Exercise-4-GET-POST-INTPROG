@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
+    font-family: "Raleway",sans-serif;
+}
+/* Popup container styles */
+.popup-urComment {
+    position: fixed; /* Use fixed positioning to allow it to move with the user's scroll */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(1.25); /* Center and scale */
+    width: 450px; /* Width of the popup */
+    height: auto; /* Height is auto to fit content */
+    padding: 20px 30px; /* Padding inside the popup */
+    background: #fff; /* Background color */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Box shadow */
+    border-radius: 10px; /* Rounded corners */
+  /*  opacity: 0; /* Initially hidden */
+    transition: opacity 200ms ease-in-out, transform 200ms ease-in-out; /* Transition effects */
+    z-index: 1000; /* Ensure it's above other content */
+    border: 1px solid rgb(48, 47, 47);
+}
+
+
+/* Close button styles */
+.popup-urComment .close-comment-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px; /* Increase size for better visibility */
+    height: 30px;
+    background: #888; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    line-height: 30px; /* Center text vertically */
+    border-radius: 50%; /* Circular button */
+    cursor: pointer;
+    font-size: 20px; /* Font size for the × */
+}
+
+/* Heading styles */
+.popup-urComment h1 {
+    text-align: center;
+    color: #222; /* Text color */
+    margin: 10px 0; /* Margin for spacing */
+    font-size: 35px; /* Font size for the heading */
+}
+
+.popup-urComment h2 {
+    text-align: center;
+    color: #222; /* Text color */
+    margin: 10px 0; /* Margin for spacing */
+    font-size: 25px; /* Font size for the subheading */
+}
+
+/* Box content styles */
+.popup-urComment .box-content {
+    margin-top: 20px; /* Margin from the top */
+    padding: 10px; /* Padding inside the box */
+    border: 1px solid #aaa; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background: #f9f9f9; /* Background color */
+}
+
+.popup-urComment p {
+    text-align: center;
+    color: #222; /* Text color */
+    margin: 3px 0 20px; /* Margin for spacing */
+    font-size: 15px; /* Font size for the text */
+}
+
